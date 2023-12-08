@@ -17,7 +17,7 @@
 wget -O cloudflare-ddns.sh https://raw.githubusercontent.com/jinqians/cloudflare-ddns/main/cloudflare-ddns.sh && chmod +x cloudflare-ddns.sh && ./cloudflare-ddns.sh
 ```
 输入自己的对应信息
-![](http://jinqians.com/wp-content/uploads/2023/12/3.png)
+![](http://jinqians.com/wp-content/uploads/2023/12/4.png)
 
 3. 执行完成后按照提示，输入下方命令执行
 ```shell
