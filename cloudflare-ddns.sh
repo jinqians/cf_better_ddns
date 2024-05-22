@@ -41,7 +41,7 @@ CFTTL=120
 FORCE=false
 
 # 获取WAN IP的网站
-WANIPSITE="https://cloudflare.vmshop.org/ipv4.php"
+WANIPSITE="https://ipdb.api.030101.xyz/?type=bestproxy&country=true"
 
 # 获取参数
 while getopts k:u:h:z:t:f: opts; do
@@ -93,7 +93,7 @@ WAN_IP=\$(curl -s \$WANIPSITE | tr -d ' ' | tr -d '\n' | sed 's/<br>/\n/g' | hea
 
 # 如果WAN_IP无效，尝试备用IP源
 if ! is_valid_ip "\$WAN_IP"; then
-    WAN_IP=\$(curl -s "https://cloudflare.vmshop.org/cloudflare-v4.php" | tr -d ' ' | tr -d '\n' | sed 's/<br>/\n/g' | head -n 1)
+    WAN_IP=\$(curl -s "https://ipdb.api.030101.xyz/?type=bestcf&country=true" | tr -d ' ' | tr -d '\n' | sed 's/<br>/\n/g' | head -n 1)
     if ! is_valid_ip "\$WAN_IP"; then
         echo "无法获取有效的IPv4地址"
         exit 1
