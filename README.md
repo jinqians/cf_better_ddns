@@ -1,6 +1,6 @@
 # 功能
-自动调度Cloudflare DDNS反代IP 云端分钟更新一次<br/>
-优选IP速度大于100Mbps，电信可能无法保障<br/>
+自动调度Cloudflare云端分钟更新一次<br/>
+优选IP速度大于100Mbps<br/>
 全天99%在线
 
 ## 食用方式
